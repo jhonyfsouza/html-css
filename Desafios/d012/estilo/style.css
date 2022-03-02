@@ -57,6 +57,10 @@ section{
     line-height: 2em;
 }
 
+section p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
     color: black;
