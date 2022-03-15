@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -32,14 +33,22 @@
             background-color: rgb(38, 38, 38);
             color: white;
         }
+
+        /*Fixando o cabeçalho da tabela*/
+        thead > tr > th {
+            position:sticky;
+            top: -1px;
+            background-color: rgb(38, 38, 38);
+        }
+
         /*Faz o estilo zebrado em tabelas*/
         tbody tr:nth-child(odd) { /*odd ou 2n-1*/
-            background-color: rgba(201, 201, 0, 0.616);
+            background-color: white;
             font-weight: bold;
         }
 
         tbody > tr:nth-child(even) { /*even ou 2n*/
-            background-color: rgba(0, 143, 143, 0.288);
+            background-color: lightgrey;
             font-weight: bold;
         }
 
