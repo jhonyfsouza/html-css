@@ -32,6 +32,16 @@
             background-color: rgb(38, 38, 38);
             color: white;
         }
+        /*Faz o estilo zebrado em tabelas*/
+        tbody tr:nth-child(odd) { /*odd ou 2n-1*/
+            background-color: rgba(201, 201, 0, 0.616);
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even) { /*even ou 2n*/
+            background-color: rgba(0, 143, 143, 0.288);
+            font-weight: bold;
+        }
 
         td.num {
             text-align: right;
